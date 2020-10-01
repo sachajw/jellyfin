@@ -6,6 +6,10 @@ services:
     user: 1000:1000
     network_mode: "host"
     restart: "unless-stopped"
+    runtime: nvidia
+    environment:
+      - JELLYFIN_PublishedServerUrl=http://example.com
+      - NVIDIA_VISIBLE_DEVICES=all
     volumes:
       - /jellyfin/config:/config
       - /jellyfin/cache:/cache
