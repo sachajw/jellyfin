@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   jellyfin:
     container_name: jellyfin
@@ -6,7 +6,7 @@ services:
     user: 1000:1000
     network_mode: "host"
     restart: "unless-stopped"
-    runtime: "nvidia"
+    runtime: nvidia
     environment:
 #      - JELLYFIN_PublishedServerUrl=http://example.com
       - NVIDIA_VISIBLE_DEVICES=all
