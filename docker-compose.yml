@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 services:
   jellyfin:
     container_name: jellyfin
@@ -8,7 +8,7 @@ services:
     restart: "unless-stopped"
     runtime: "nvidia"
     environment:
-      - JELLYFIN_PublishedServerUrl=http://example.com
+#      - JELLYFIN_PublishedServerUrl=http://example.com
       - NVIDIA_VISIBLE_DEVICES=all
     volumes:
       - /jellyfin/config:jellyfin/config
