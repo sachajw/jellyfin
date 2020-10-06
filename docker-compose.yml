@@ -19,10 +19,10 @@ services:
       - 7359:7359/udp #optional
       - 1900:1900/udp #optional
     devices:
-      - /dev/dri:/dev/dri #optional
-      - /dev/vcsm:/dev/vcsm #optional
-      - /dev/vchiq:/dev/vchiq #optional
-      - /dev/video10:/dev/video10 #optional
-      - /dev/video11:/dev/video11 #optional
-      - /dev/video12:/dev/video12 #optional
+#      - /dev/dri:/dev/dri #optional
+#      - /dev/vcsm:/dev/vcsm #optional
+#      - /dev/vchiq:/dev/vchiq #optional
+#      - /dev/video10:/dev/video10 #optional
+#      - /dev/video11:/dev/video11 #optional
+#      - /dev/video12:/dev/video12 #optional
     restart: unless-stopped
