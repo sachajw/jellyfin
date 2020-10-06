@@ -10,9 +10,9 @@ services:
       - TZ=Africa\Johannesburg
       - UMASK_SET=<022> #optional
     volumes:
-      - /jellyfin/config:jellyfin/config
-      - /jellyfin/cache:jellyfin/cache
-      - /jellyfin/media:jellyfin/media
+      - /jellyfin/config:/jellyfin/config
+      - /jellyfin/cache:/jellyfin/cache
+      - /jellyfin/media:/jellyfin/media
     ports:
       - 8096:8096
       - 8920:8920 #optional
