@@ -11,6 +11,6 @@ services:
       - JELLYFIN_PublishedServerUrl=http://example.com
       - NVIDIA_VISIBLE_DEVICES=all
     volumes:
-      - /jellyfin/config:/config
-      - /jellyfin/cache:/cache
-      - /jellyfin/media:/media
+      - /jellyfin/config:jellyfin/config
+      - /jellyfin/cache:jellyfin/cache
+      - /jellyfin/media:jellyfin/media
